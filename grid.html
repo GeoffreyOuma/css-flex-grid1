@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> grid - css grid layout </title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: black;
+            padding: 2em;
+        }
+        .main {
+            width: 50%;
+            align-items: center;
+            justify-content: center;
+            padding: 4em;
+            height: 60vh;
+            margin: auto;
+            display: grid;
+            padding-top: 2em;
+        }
+        .grid-container {
+            display: grid;
+            width: 50%;
+        }
+        .top-grid {
+            display: flex;
+        }
+        .grid-container .one {
+            width: 400px;
+            height: 170px;
+            background-color: rgb(173, 60, 7);
+        }
+        .grid-container .two {
+            width: 170px;
+            height: 170px;
+            background-color: yellow;
+        }
+        .bottom-grid {
+        }
+        .three {
+            background-color: green;
+            width: 200px;
+            height: 80px;
+        }
+        .four {
+            background-color: blue;
+            background-color: blue;
+            width: 200px;
+            height: 40px;
+        }
+        .five {
+            background-color: blue;
+            background-color: blue;
+            width: 200px;
+            height: 40px;
+        }
+        .main {
+            background-color: rgb(1, 1, 37);
+        }
+    </style>
+</head>
+<body>
+    <main class="main">
+        <div class="grid-container" style="row-gap: 10px;">
+            <div class="top-grid" style="column-gap: 10px;">
+                <div class="one"></div>
+                <div class="two"></div>
+            </div>
+            
+            <div class="bottom-grid" style="display: flex; column-gap: 10px;">
+                <div class="bottom-right">
+                    <div class="three" style="height: 200px; width: 200px;"></div>
+                </div>
+                <div style="row-gap: 10px; display: grid; column-gap: 10px;">
+                    <div style="background-color: blue; height: 95px; width: 370px;"></div>
+                    <div style="background-color: blue; height: 95px; width: 370px;"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Kindly don't mind below code -->
+    <!-- <footer>
+        <h1 style="font-size: 40px; color: white; text-align: center;"><b>Designed by <span style="color: orange;">slash</span>Dojo.</b></h1>
+    </footer> -->
+</body>
+</html>
